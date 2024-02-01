@@ -1,0 +1,4 @@
+include:
+  - stremio/compose.yml
+  - postgres/compose.yml
+  - pgadmin4/compose.yml
