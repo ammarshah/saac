@@ -4,26 +4,29 @@ These are the list of softwares that I install every time I install a new versio
 
 I never liked doing repeated work.
 
-Now, I can run a single command to run these softwares as a container. Also, updating their version is as easy as changing the version number in a relevant `compose.yml` file. Thanks to Docker!
+Now I can run a single command to run these softwares as a container. Thanks to Docker!
 
 ## To run the services
 ```shell
-$ docker compose -f compose.main.yml up
+$ docker compose up
+
+# or run a specific service
+$ docker compose up stremio
 ```
 
 ## To stop the services
 ```shell
-$ docker compose -f compose.main.yml stop
+$ docker compose stop
 ```
 
 or stop and remove the containers and network
 
 ```shell
-$ docker compose -f compose.main.yml down
+$ docker compose down
 ```
 
 or stop and remove the containers, images and network automatically
 
 ```shell
-$ docker compose -f compose.main.yml down --rmi all
+$ docker compose down --rmi all
 ```

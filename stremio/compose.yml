@@ -1,6 +1,6 @@
 services:
   stremio:
-    image: stremio/server:v4.20.5
+    image: stremio/server
     container_name: saac-stremio
     ports:
       - 11470:11470
